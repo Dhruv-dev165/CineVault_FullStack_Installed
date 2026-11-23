@@ -142,8 +142,8 @@ app.use(express.static(path.join(__dirname, '..', 'frontend')));
 
 app.listen(PORT, () => {
   console.log(`=================================================`);
-  console.log(` CineVault User Website: http://localhost:${PORT}`);
-  console.log(` CineVault Backend API running on http://localhost:${PORT}/api/movies`);
-  console.log(` Private Admin Panel: http://localhost:${PORT}/admin`);
+  console.log(` CineVault User Website: http://localhost:10000`);
+  console.log(` CineVault Backend API running on  http://localhost:10000/api/movies`);
+  console.log(` Private Admin Panel: http://localhost:10000/admin`);
   console.log(`=================================================`);
 });
