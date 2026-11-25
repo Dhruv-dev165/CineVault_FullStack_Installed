@@ -7,7 +7,8 @@ const { MongoClient } = require('mongodb');
 const app = express();
 const PORT = process.env.PORT || 5000;
 const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin123';
-const MONGODB_URI = process.env.MONGODB_URI;
+// Support both Render variable names; prefer the name currently configured by the project owner.
+const MONGODB_URI = process.env.MONGO_URI || process.env.MONGODB_URI;
 const DB_NAME = process.env.MONGODB_DB_NAME || 'cinevault';
 const DATA_FILE = path.join(__dirname, 'data', 'movies.json');
 
