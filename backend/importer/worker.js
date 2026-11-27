@@ -109,9 +109,10 @@ async function importOnce(collection) {
       }
       movie.id = 'import_' + movie.sourceKey.slice(0, 24);
       movie.createdAt = new Date().toISOString();
+      const { createdAt, ...movieFields } = movie;
       await collection.updateOne(
         { sourceKey: movie.sourceKey },
-        { $set: movie, $setOnInsert: { createdAt: movie.createdAt } },
+        { $set: movieFields, $setOnInsert: { createdAt } },
         { upsert: true }
       );
       imported++;
