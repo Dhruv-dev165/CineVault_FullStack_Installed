@@ -4,7 +4,8 @@
   "description": "CineVault Movie Portal Backend API & Admin Panel",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "import:worker": "node importer/worker.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
