@@ -1,0 +1,15 @@
+{
+  "movies": [
+    {
+      "id": "provider-unique-movie-id",
+      "title": "Example Licensed Movie",
+      "category": "Drama",
+      "year": 2026,
+      "language": "Hindi",
+      "quality": "1080p",
+      "poster": "https://media.example.com/posters/example.jpg",
+      "description": "Example synopsis.",
+      "videoUrl": "https://media.example.com/videos/example.mp4"
+    }
+  ]
+}
